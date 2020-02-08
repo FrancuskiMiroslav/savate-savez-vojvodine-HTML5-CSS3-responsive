@@ -1,0 +1,426 @@
+/*! project-name v0.0.1 | (c) 2020 Francuski Miroslav | MIT License | http://link-to-your-git-repo.com */
+@charset "UTF-8";
+/* Header&Navbar */
+/* line 2, src/sass/style.scss */
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  /* padding: 0 50px; couldnt work with it */
+  height: 300px;
+}
+
+/* line 9, src/sass/style.scss */
+.mainh1 {
+  background-image: url("../images/background.jpg");
+  /* background-repeat: no-repeat; */
+  max-width: 100%;
+  height: 300px;
+}
+
+/* line 16, src/sass/style.scss */
+.mainh1 h1 {
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* line 22, src/sass/style.scss */
+#top-nav {
+  border-radius: 0px 0 10px 10px;
+  background: #1d293f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/* line 30, src/sass/style.scss */
+.navlogo img {
+  height: 56px;
+  width: 80px;
+  border-radius: 10px;
+}
+
+/* line 36, src/sass/style.scss */
+#top-nav ul {
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 60px;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 49, src/sass/style.scss */
+#top-nav ul li {
+  list-style-type: none;
+  padding: 2px 4px;
+  background-color: #dddddd;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+/* line 57, src/sass/style.scss */
+#top-nav ul a {
+  height: 100px;
+  width: 100%;
+  border-radius: 5px;
+  color: #3e5e91;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 66, src/sass/style.scss */
+#top-nav ul li:hover {
+  background-color: #adadad;
+}
+
+/* line 70, src/sass/style.scss */
+#top-nav ul li a:hover {
+  font-size: 125%;
+  color: #fff;
+}
+
+/* line 75, src/sass/style.scss */
+#top-nav ul li ul {
+  display: none;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+
+/* line 82, src/sass/style.scss */
+#top-nav ul li:hover ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #adadad;
+}
+
+/* line 88, src/sass/style.scss */
+#top-nav ul li ul li:hover {
+  background-color: #dddddd;
+}
+
+/* line 92, src/sass/style.scss */
+#top-nav ul li ul li {
+  padding: 2px 30px;
+}
+
+/* Main */
+/* line 97, src/sass/style.scss */
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 50px;
+}
+
+/* line 102, src/sass/style.scss */
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  max-width: 1900px;
+  padding: 30px 15px;
+  margin: 0 0px 0 15px;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+}
+
+/* line 114, src/sass/style.scss */
+.naslov1 {
+  border-bottom: 2px solid #ddd;
+}
+
+/* line 118, src/sass/style.scss */
+.naslov1 header .main a {
+  text-decoration: none;
+  color: #adadad;
+}
+
+/* line 123, src/sass/style.scss */
+.naslov1 header .main a:hover {
+  font-size: 125%;
+  background-color: #adadad;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+}
+
+/* line 132, src/sass/style.scss */
+.naslov1 .content p {
+  margin: 0 0px 5px 0;
+}
+
+/* line 136, src/sass/style.scss */
+.naslov1 .content p img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 141, src/sass/style.scss */
+.naslov1 .links {
+  margin: 10px 0 10px 0;
+}
+
+/* line 145, src/sass/style.scss */
+.naslov1 .links a {
+  background: #3276b9 url(../images/menuactive_02.png) repeat-x;
+  border: 1px solid transparent;
+  padding: 4px 6px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* line 155, src/sass/style.scss */
+.naslov1 .links a:hover {
+  font-size: 110%;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 8px;
+}
+
+/* line 163, src/sass/style.scss */
+.naslov1 .links a:after {
+  content: "»";
+  font-size: 15px;
+}
+
+/* line 168, src/sass/style.scss */
+.side-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #dddddd;
+  list-style-type: none;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 10px;
+}
+
+/* line 178, src/sass/style.scss */
+.side-bar ul li {
+  padding: 5px;
+}
+
+/* line 182, src/sass/style.scss */
+.side-bar ul li:hover {
+  background-color: #1d293f;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  cursor: pointer;
+}
+
+/* line 189, src/sass/style.scss */
+.side-bar ul li a img {
+  border-radius: 10px;
+}
+
+/* Footer */
+/* line 194, src/sass/style.scss */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  background-color: #1d293f;
+  color: #fff;
+  border-radius: 10px 10px 0px 0px;
+}
+
+/* line 204, src/sass/style.scss */
+#footer {
+  margin: auto;
+}
+
+/* line 208, src/sass/style.scss */
+.footh3 {
+  font-size: 20px;
+  padding: 15px 0;
+}
+
+/* line 213, src/sass/style.scss */
+.meni-foot,
+.linkfoot,
+.contfoot {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  text-align: center;
+}
+
+/* line 221, src/sass/style.scss */
+.meni-foot a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 226, src/sass/style.scss */
+.meni-foot ul li {
+  list-style-type: none;
+}
+
+/* line 229, src/sass/style.scss */
+.meni-foot ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 233, src/sass/style.scss */
+.meni-foot ul li a:hover,
+.linkfoot ul li a:hover {
+  font-size: 120%;
+  background-color: #adadad;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 7px;
+}
+
+/* line 241, src/sass/style.scss */
+.linkfoot ul {
+  color: #fff;
+}
+
+/* line 245, src/sass/style.scss */
+.linkfoot ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* line 250, src/sass/style.scss */
+.linkfoot ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Copyright */
+/* line 257, src/sass/style.scss */
+body .copyright {
+  background-color: #0d131e;
+  color: #fff;
+  max-width: 2000px;
+  height: 15px;
+  text-align: left;
+  padding: 0px 10px;
+  font-size: 80%;
+}
+
+/* 700px screens and lower */
+@media only screen and (max-width: 700px) {
+  /* line 269, src/sass/style.scss */
+  .main-header {
+    padding: 15px 15px 0 15px;
+  }
+  /* line 273, src/sass/style.scss */
+  #top-nav {
+    height: 750px;
+    text-align: center;
+  }
+  /* line 278, src/sass/style.scss */
+  #top-nav ul {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+  /* line 284, src/sass/style.scss */
+  #top-nav ul li {
+    padding: 5px;
+  }
+  /* line 288, src/sass/style.scss */
+  .meni-foot,
+  .linkfoot,
+  .contfoot {
+    border-bottom: 5px ridge #dddddd;
+    margin: 0 50px;
+    padding: 0px 0px 7px 0px;
+  }
+  /* line 296, src/sass/style.scss */
+  #footer .footh3 {
+    padding: 5px 0 15px 0;
+  }
+  /* line 299, src/sass/style.scss */
+  #footer {
+    display: block;
+  }
+}
+
+/* 800px screens and lower */
+@media only screen and (max-width: 800px) {
+  /* line 306, src/sass/style.scss */
+  #main {
+    display: block;
+    padding: 0px 15px 0px 15px;
+  }
+  /* line 311, src/sass/style.scss */
+  .main-content {
+    padding: 0px 15px 15px 15px;
+    margin: 0;
+  }
+  /* line 316, src/sass/style.scss */
+  .side-bar {
+    display: none;
+  }
+  /* line 320, src/sass/style.scss */
+  .mainh1 h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Internet explorer 10 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+}
